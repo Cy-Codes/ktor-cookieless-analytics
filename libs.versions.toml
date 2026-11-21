@@ -1,0 +1,8 @@
+[versions]
+kotlinx-coroutines = "1.11.0"
+flowmvi = "3.2.1"
+
+[libraries]
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+flowmvi-core = { module = "pro.respawn.flowmvi:core", version.ref = "flowmvi" }
+flowmvi-test = { module = "pro.respawn.flowmvi:test", version.ref = "flowmvi" }

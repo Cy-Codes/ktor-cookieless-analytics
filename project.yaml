@@ -1,0 +1,3 @@
+modules:
+  - cookieless-analytics-core
+  - cookieless-analytics-server

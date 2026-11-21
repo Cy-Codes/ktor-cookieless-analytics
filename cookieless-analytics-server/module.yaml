@@ -1,0 +1,13 @@
+product: jvm/lib
+
+apply:
+  - ../common-lib.module-template.yaml
+
+dependencies:
+  - ../cookieless-analytics-core: exported
+
+settings:
+  publishing:
+    pom:
+      name: cookieless-analytics-server
+      description: JVM server daily-salted SHA-256 cookieless visitor hash generator.

@@ -1,0 +1,22 @@
+product:
+  type: kmp/lib
+  platforms: [ jvm, android, iosArm64, iosSimulatorArm64, wasmJs ]
+
+apply:
+  - ../common-lib.module-template.yaml
+
+dependencies:
+  - $kotlin.serialization.json: exported
+  - $libs.flowmvi.core: exported
+
+settings:
+  kotlin:
+    serialization: enabled
+  publishing:
+    pom:
+      name: cookieless-analytics-core
+      description: Pure KMP cookieless analytics DTO contracts and non-blocking FlowMVI telemetry plugin.
+
+test-dependencies:
+  - $libs.kotlinx.coroutines.test
+  - $libs.flowmvi.test
